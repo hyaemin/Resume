@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [08/Jan/2018:16:36:05 +0900] "GET /porfolio/mypage.jsp HTTP/1.1" 200 1620
+0:0:0:0:0:0:0:1 - - [08/Jan/2018:16:36:05 +0900] "GET /porfolio/lib/jquery-3.2.1.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/Jan/2018:16:36:05 +0900] "GET /porfolio/css/style.css?v=0 HTTP/1.1" 200 2564
+0:0:0:0:0:0:0:1 - - [08/Jan/2018:16:36:05 +0900] "GET /porfolio/mypage.jsp HTTP/1.1" 200 1620
+0:0:0:0:0:0:0:1 - - [08/Jan/2018:16:36:06 +0900] "GET /porfolio/css/style.css?v=0 HTTP/1.1" 200 2564
+0:0:0:0:0:0:0:1 - - [08/Jan/2018:16:36:06 +0900] "GET /porfolio/lib/jquery-3.2.1.js HTTP/1.1" 200 268039
+0:0:0:0:0:0:0:1 - - [08/Jan/2018:16:36:06 +0900] "GET /porfolio/img/jez-timms-2831.jpg HTTP/1.1" 200 65230
+0:0:0:0:0:0:0:1 - - [08/Jan/2018:16:36:06 +0900] "GET /favicon.ico HTTP/1.1" 404 1081

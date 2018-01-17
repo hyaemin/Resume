@@ -1,0 +1,142 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Polar porfolio</title>
+
+<link href="css/style.css?v=0" rel="stylesheet">
+<script src="lib/jquery-3.2.1.js"></script>
+<script src="https://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
+
+<script type="text/javascript">
+
+$(function() {
+	
+	//scroll 메뉴바 show, hide
+	$(window).scroll(function () {
+        if ($(this).scrollTop() > 900) {
+            $('.menu_area').fadeIn();
+        } else {
+            $('.menu_area').fadeOut();
+        }
+    });
+    // logo click => menu bar hide
+    /* $('#logo').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+	 */
+	
+	//chart
+	  $('.chart').easyPieChart({
+	    scaleColor: "#ecf0f1",
+	    lineWidth: 20,
+	    lineCap: 'butt',
+	    barColor: '#7C7877',
+	    trackColor:	"#ecf0f1",
+	    size: 250,
+	    animate: 500
+	  });
+	
+	//하단 화살표이동
+    $('.scroll-down').click (function(){
+      $('html, body').animate({scrollTop: $('.about_content').offset().top }, 'slow');
+      return false;
+    });
+    
+  
+  });
+
+</script>
+
+</head>
+<body>
+<div class="wrap">
+<div class="whole">
+	
+
+	<header id="header">
+	
+	<div class="menu_area">
+		<div class="menu_logo">
+			<a href="#header" class="logo">HYE MIN</a>
+		</div>
+		<div class="menu">
+			 <ul>
+			 
+			 	<li><a href="#about">ABOUT ME</a></li>
+			 	<li><a href="#porfolio">PORTFOLIO</a></li>
+			 	<li><a href="#contact">CONTACT</a></li>
+			 	
+			 </ul>
+		 </div>
+	</div>
+
+		 
+		 <div class="main_title">
+
+				<p class="main_txt_top">Developer</p>
+				<p class="main_txt">PARK HYE MIN </p>
+
+		</div>
+		
+		<a href="#" class="scroll-down" address="true"></a>
+	</header>
+
+	<about id="about">
+		<div class="about_content">
+		
+			<p class="about_head">ABOUT ME </p>
+		 	<p class="about_title">안녕하세요. Back-end Developer 박혜민입니다.</p>
+		 	  
+		 <div class="about_main">
+			<div class="about_container">
+			  <div class="chart" data-percent="90">JAVA</div>
+			  <div class="chart" data-percent="65">Servlet&Jsp</div>
+			  <div class="chart" data-percent="70">CSS3</div>
+			  <div class="chart" data-percent="55">jQuery</div>
+			  <div class="chart" data-percent="85">JavaScript</div>
+			  <div class="chart" data-percent="90">Ajax</div>
+			</div>
+			
+			<div class="about_link">
+				<p style="text-align: center;">저에 대해 더 궁금하신가요?</p> 
+			
+			</div>
+			 	 	
+		 </div>
+		 	
+		</div>
+		
+		
+	</about>
+	
+	<porfolio id="porfolio">
+		<div class="porfolio_content">
+		
+		</div>
+	
+	</porfolio>
+	
+	<contact id="contact">
+		<div class="contact_content">
+		</div>
+	</contact>
+	
+	<footer>
+		<div class="footer_wrap">
+			<p>ⓟ2018.박혜민.all rights reserved.</p>
+		</div>
+	</footer>
+	
+</div>
+</div>
+
+
+
+</body>
+</html>
